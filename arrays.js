@@ -1,4 +1,4 @@
-var chocolateBars = [
+vvar chocolateBars = [
   "snickers",
   "hundred grand",
   "kitkat",
@@ -20,4 +20,21 @@ function addElementToEndOfArray (x , y) {
 function destructivelyAddElementToEndOfArray(x, y) {
   x.push(y)
   return x
+}
+function accessElementInArray(x , y) {
+  return x[y]
+}
+function destructivelyRemoveElementFromBeginningOfArray(x) {
+  x.shift()
+  return x
+}
+function removeElementFromBeginningOfArray (x) {
+  x.slice(0)
+  return x 
+}
+function destructivelyRemoveElementFromEndOfArray(x) {
+  x.pop()
+}
+function removeElementFromEndOfArray(x) {
+  x.slice(0, x.length - 1)
 }
